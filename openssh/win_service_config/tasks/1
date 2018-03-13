@@ -1,0 +1,6 @@
+---
+ - name: start the service
+   win_service:
+     name: "{{ service_name }}"
+     path: C:\temp\text.exe
+     state: started

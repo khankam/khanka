@@ -1,0 +1,6 @@
+---
+ - name: run the role for openssh installation
+   hosts: windows
+   become: true
+   roles:
+      - win_service_config 
