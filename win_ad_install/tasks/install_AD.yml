@@ -1,0 +1,6 @@
+---
+ - name: install AD-domain services
+   win_feature:
+      name: AD-Domain-Services
+      state: present
+
