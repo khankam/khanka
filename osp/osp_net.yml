@@ -1,0 +1,6 @@
+---
+ - name: osp network
+   hosts: jumpbox
+   roles:
+#      - osp_network
+      - osp_keypair
