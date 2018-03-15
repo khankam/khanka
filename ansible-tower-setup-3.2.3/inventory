@@ -1,0 +1,29 @@
+[tower]
+tower1.64cb.internal
+tower2.64cb.internal
+tower3.64cb.internal
+[database]
+support1.64cb.internal
+[all:vars]
+ansible_become=true
+admin_password='admin098'
+
+pg_host='support1.64cb.internal'
+pg_port='5432'
+
+pg_database='awx'
+pg_username='awx'
+pg_password='admin098'
+
+rabbitmq_port=5672
+rabbitmq_vhost=tower
+rabbitmq_username=tower
+rabbitmq_password='admin098'
+rabbitmq_cookie=cookiemonster
+
+# Needs to be true for fqdns and ip addresses
+rabbitmq_use_long_name=true
+
+# Isolated Tower nodes automatically generate an RSA key for authentication;
+# To disable this behavior, set this value to false
+# isolated_key_generation=true
