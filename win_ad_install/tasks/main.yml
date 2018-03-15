@@ -1,0 +1,10 @@
+---
+# tasks file for win_ad_install
+ 
+ - include: install_AD.yml
+
+ - include: set_AD_controller.yml
+ 
+ - include: reboot.yml
+ 
+ - include: dc_list.yml

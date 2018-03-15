@@ -1,0 +1,11 @@
+---
+ - name: set firewall rule
+   win_firewall_rule:
+     name: "{{ package_name }}"
+     localport: "{{ local_port }}"
+     action: allow
+     direction: in
+     protocol: "{{ protocol_name }}"
+     state: present
+     enabled: yes   
+

@@ -1,0 +1,7 @@
+---
+ - name: to add an AD user
+   hosts: windows
+   become: true
+   roles:
+      - win_ad_user
+ 

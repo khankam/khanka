@@ -1,0 +1,7 @@
+---
+ - name: run role
+   hosts: windows
+   become: true
+   roles:
+      - win_ad_install
+

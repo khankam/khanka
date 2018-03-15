@@ -1,0 +1,11 @@
+---
+ - name: set up AD controller
+   win_domain:
+      dns_domain_name: ad1.64cb.example.opentlc.com
+      safe_mode_password: "{{ ansible_password }}"
+   register: out
+
+ - name: debug
+   debug:
+     var: out
+

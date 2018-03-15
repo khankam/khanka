@@ -1,0 +1,5 @@
+---
+ - name: reboot
+   win_reboot:
+   when: out.reboot_required
+
